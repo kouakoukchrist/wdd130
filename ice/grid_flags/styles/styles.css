@@ -1,0 +1,205 @@
+tyle>
+        *{box-sizing: border-box;}
+
+         body {
+            margin: 0;
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: gray;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 0.75rem 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            letter-spacing: 0.05rem;
+            text-transform: uppercase;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-weight: 400;
+        }
+        main {
+            display: grid;
+            grid-template-columns: .1fr .1fr 1fr .1fr;
+            margin-top: 20px;
+        }
+        hr {
+            width: 100%;
+            grid-column: 1 / 5;
+        }
+        h2 {
+            grid-column: 2/3;
+        }
+
+        #blue {
+            background: blue;
+            grid-column: 1 / 2;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+        }
+
+        #white {
+            background: white;
+            grid-column: 2 / 4;
+        }
+
+        #red {
+            background: red;
+            grid-column: 1 / 4;
+        }
+
+        #chile {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        .star {
+            width: 70px;
+            aspect-ratio: 1;
+            background: white;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+        }
+
+
+        #denmark{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;  
+            background-color: #fff;
+            gap:30px
+                }
+
+        #dred1, #dred2, #dred3, #dred4 {
+            background: red;
+
+        }
+
+        #finland {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;  
+            background-color: blue;
+            gap:30px
+                }
+
+            #fwhite1, #fwhite2, #fwhite3, #fwhite4 
+            {background: white;
+                    }
+
+        #benin{
+            display: grid;
+            grid-template-columns: 1.5fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            height: 200px;
+            width: 300px;  
+            background-color: green;
+            
+                }
+        #byellow{
+
+            background: yellow;
+            grid-column: 2 / 3;
+        }
+        #bred{
+            background: red;
+            grid-column: 2 / 3;
+        }
+
+        #italy{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 200px;
+            width: 300px;
+            background-color: white;
+        }
+        
+        #igreen{
+            background: green;
+            grid-column: 1 / 2;
+        }
+
+
+        #ired{
+            background: red;
+            grid-column: 3 / 4;
+        }
+
+        #car {
+            display: grid;
+            grid-template-columns: 1fr 0.2fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            height: 200px;
+            width: 300px;
+            background-color: red;
+        }
+
+        #cblue{
+            background: #0033a0;
+            grid-column: 1 / 4;
+            grid-row: 1 / 2 ;
+        }
+
+        #cwhite {
+            background-color: white;
+            grid-column: 1 / 4;
+            grid-row: 2 / 3;
+          }
+
+          #cgreen {
+            background-color: #009739;
+            grid-column: 1 / 4;
+            grid-row: 3 / 4;
+          }
+          #cyellow {
+            background-color: #ffce00;
+            grid-column: 1 / 4;
+            grid-row: 4 / 5;
+          }
+
+          #cred {
+            background-color: #d21034;
+            grid-column: 2 / 3;
+            grid-row: 1 / 5;
+          }
+
+          .cstar {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            justify-self: start;
+            align-self: start;
+            width: 40px;
+            height: 40px;
+            margin: 10px;
+            background: #ffce00;
+            clip-path: polygon(
+                50% 0%,
+                61% 35%,
+                98% 35%,
+                68% 57%,
+                79% 91%,
+                50% 70%,
+                21% 91%,
+                32% 57%,
+                2% 35%,
+                39% 35%
+              );
+            }
+              
+              
+              
+            
+          
