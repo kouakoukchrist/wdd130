@@ -69,7 +69,11 @@
         }
 
         #wwr-section #hero-img {
-            width: 100%;
+            max-width: 100%;
+            max-width: 100%;
+            object-fit: cover;
+            filter: brightness(75%);
+            display: block;
         }
 
         #wwr-section nav {
@@ -90,42 +94,61 @@
         }
 
         #wwr-section #hero {
+            position: relative;
             display: grid;
             grid-template-columns: 1fr 3fr 1fr;
-            margin-top: -100px;
+            align-items: center;
+            justify-items: center;
+            overflow: hidden;
+            height: 400px;
+            margin-top: 0;
         }
 
         #wwr-section #hero-box {
             grid-column: 1 / 4;
             grid-row: 1 / 3;
-            z-index: -1;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
         }
 
         #wwr-section #hero-msg {
             grid-column: 2 / 3;
             grid-row: 1 / 2;
-            margin-top: 100px;
-        }
-
-        #wwr-section .home-title,
-        #wwr-section .subheading {
-            color: var(--background-color);
-            font-family: var(--heading-font);
             text-align: center;
-            font-size: 2em;
-            margin-top: 10px;
+            color: white;
+            z-index: 1;
+            padding: 1rem;
         }
 
-        #wwr-section #hero-msg h4 {
-            font-size: 1.2em;
+        #wwr-section .home-title {
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
         }
 
-        #wwr-section h4 {
-            color: black;
+        #wwr-section .subheading {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         #wwr-section .button-box {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        #wwr-section .book {
+            background-color: #556e47;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+
+        #wwr-section .book:hover {
+            background-color: #4d5647;
         }
 
         #wwr-section .home-grid {
@@ -266,7 +289,7 @@
     <header>
         <img class="logo" src="images/portal_logo1.png" alt="logo">
         <nav>
-            <a href="portal.html"> Home</a> |
+            <a href="https://kouakoukchrist.github.io/wdd130/"> Home</a> |
             <a href="wwr.html"> WWR</a> |
             <a href="ice.html"> ICE</a> |
             <a href="https://picsum.photos"> About Me</a>
@@ -295,7 +318,7 @@
         <div id="content">
             <header>
                 <a id="logo_link" href="index.html">
-                    <img class="logo" src="images/images/image5.webp" alt="logo">
+                    <img class="logo" src="wwr/images/image5.webp" alt="logo">
                 </a>
                 <nav>
                     <a href="https://picsum.photos">Home</a>
@@ -307,7 +330,7 @@
 
             <div id="hero">
                 <div id="hero-box">
-                    <img id="hero-img" src="images/images/packs.jpg" alt="We Love Water">
+                    <img id="hero-img" src="wwr/images/Raft.jpg" alt="We Love Water">
                 </div>
                 <section id="hero-msg">
                     <h1 class="home-title">Right Place For You</h1>
@@ -320,25 +343,25 @@
 
             <main class="home-grid">
                 <section class="rivers-card">
-                    <img class="card-img" src="images/images/Family.webp" width="350" height="400" alt="Family Activity">
-                    <img class="icon" src="images/images/im0.jpeg" alt="ks">
+                    <img class="card-img" src="wwr/images/Family.webp" width="350" height="400" alt="Family Activity">
+                    <img class="icon" src="wwr/images/im0.jpeg" alt="ks">
                     <h2>Family Activity</h2>
                 </section>
 
                 <section class="camping-card">
-                    <img class="card-img" src="images/images/Raft.jpg" width="350" height="400" alt="Build Memory">
-                    <img class="icon" src="images/images/im8.jpeg" alt="ls">
+                    <img class="card-img" src="wwr/images/Raft.jpg" width="350" height="400" alt="Build Memory">
+                    <img class="icon" src="wwr/images/im8.jpeg" alt="ls">
                     <h2>Build Memory</h2>
                 </section>
 
                 <section class="rapids-card">
-                    <img class="card-img" src="images/images/Advanture.jpg" width="350" height="400" alt="Adventure">
-                    <img class="icon" src="images/images/images.jpeg" alt="ss">
+                    <img class="card-img" src="wwr/images/Advanture.jpg" width="350" height="400" alt="Adventure">
+                    <img class="icon" src="wwr/images/images.jpeg" alt="ss">
                     <h2>We love Water Rafting</h2>
                 </section>
 
                 <div id="background"></div>
-                <img class="mountains" src="images/images/yes2.jpg" alt="meadows">
+                <img class="mountains" src="wwr/images/yes2.jpg" alt="meadows">
 
                 <section class="msg">
                     <h2>Don't just watch the river flow—become part of the adventure!</h2>
@@ -356,9 +379,9 @@
                 <h3><a href="site-plan-rafting.html">Site Plan</a></h3>
                 <h3><a href="contactus.html">Contact Us</a></h3>
                 <div class="social">
-                    <img src="images/images/X.png" height="50" width="50" alt="footer logo">
-                    <img src="images/images/meta.png" height="50" width="50" alt="footer logo">
-                    <img src="images/images/reddit.jpeg" height="50" width="50" alt="footer logo">
+                    <img src="wwr/images/X.png" height="50" width="50" alt="footer logo">
+                    <img src="wwr/images/meta.png" height="50" width="50" alt="footer logo">
+                    <img src="wwr/images/reddit.jpeg" height="50" width="50" alt="footer logo">
                 </div>
             </footer>
         </div>
