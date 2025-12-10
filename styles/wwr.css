@@ -1,0 +1,166 @@
+
+.wwr-main {
+    --primary-color: #4d5647;
+    --primary-color-opacity: #4d564755;
+    --secondary-color: #556e47;
+    --background-color: #fafafa;
+    --heading-font: Helvetica, Arial, sans-serif;
+    --paragraph-font: Lato, Arial, sans-serif;
+}
+
+
+.wwr-main * {
+    box-sizing: border-box;
+    font-family: var(--paragraph-font);
+    color: var(--primary-color);
+}
+
+
+.wwr-main h1,
+.wwr-main h2,
+.wwr-main h3,
+.wwr-main h4 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+
+.wwr-hero #hero-img {
+    width: 100%;
+    height: auto;
+    filter: brightness(75%);
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.wwr-hero #hero-msg h1,
+.wwr-hero #hero-msg h4 {
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+}
+
+
+.wwr-intro {
+    grid-column: 1 / -1;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+}
+
+.wwr-intro p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+
+
+.wwr-card-grid {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-bottom: 60px;
+}
+
+.wwr-card {
+    text-align: center;
+    padding: 10px;
+}
+
+.wwr-card img {
+    width: 100%;
+    border-radius: 12px;
+    border: 10px solid var(--secondary-color);
+    box-shadow: 5px 5px 10px var(--primary-color);
+    transition: transform .4s;
+}
+
+.wwr-card img:hover {
+    transform: scale(1.03);
+}
+
+.wwr-card h3 {
+    margin: 15px 0 8px;
+    font-size: 1.3rem;
+}
+
+.wwr-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+
+
+.wwr-mountain-section {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.wwr-mountain-img {
+    width: 100%;
+    border-radius: 12px;
+    border: 10px solid var(--secondary-color);
+    box-shadow: 5px 5px 10px var(--primary-color);
+}
+
+.wwr-message-box {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px var(--primary-color);
+    text-align: left;
+}
+
+.wwr-message-box h2 {
+    color: var(--background-color);
+    margin-top: 0;
+}
+
+.wwr-message-box p {
+    margin: 15px 0 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.wwr-message-box .action {
+    background-color: var(--secondary-color);
+    padding: 12px 25px;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.wwr-message-box .action:hover {
+    background-color: var(--primary-color);
+}
+
+
+
+@media (max-width: 900px) {
+    .wwr-card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wwr-mountain-section {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .wwr-message-box {
+        padding: 20px;
+    }
+
+    .wwr-intro p {
+        font-size: 0.9rem;
+    }
+}
