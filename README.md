@@ -1,5 +1,10 @@
 # WDD 130 – Web Fundamentals
 
+## About Me:
+I am a cybersecurity student with a minor in computer programming. I am passionate about security and technology, and I am always eager to learn more and continue developing my skills.
+This project is my first experience in web development. I was able to learn html, css, during this project. 
+I am excited to share it with anyone who is passionate about or curious about web development.
+
 ## Overview
 This repository contains my coursework and projects for WDD 130 at BYU–Idaho. The course focused on building structured and styled websites using HTML and CSS.
 
